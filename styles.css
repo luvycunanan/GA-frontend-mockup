@@ -15,20 +15,22 @@
 }
 
 body {
-  background-image: url('./assets/main-bg.jpeg');
+  background-image: url('./assets/main-bg-cropped.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  height: 750px;
+  height: 720px;
+  background-color: rgba(var(--text-gray),.1);
 }
 
 .container {
   position: relative;
+  margin: 10px 125px;
   /* background-image: url('./assets/main-bg.jpeg');
   background-size: cover;
   background-position: center;
-  height: 700px; */
-  margin: 10px 125px;
+  width: 100vw;
+  height: 680px; */
 }
 
 /* ------------- TEXT STYLES --------------- */
@@ -111,7 +113,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 650px;
   justify-content: space-between;
   text-align: center;
   margin: 150px 125px;
@@ -167,13 +169,36 @@ body {
   height: 80px;
 }
 
+/* ----------------- DESTINATIONS ------------- */
+.top-destinations {
+  position: relative;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.destination-wrapper {
+  position: relative;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.destination {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 
 /* ------------------ IMAGES ----------------- */
 .img {
-  background-size: 385px;
-  width: 385px;
-  height: 290px;
+  background-size: 500px;
+  width: 500px;
+  height: 380px;
 }
 
 .bali { 
