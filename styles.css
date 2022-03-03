@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url('./assets/main-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.img {
+  background-size: 385px;
+  width: 385px;
+  height: 290px;
+}
+
+.bali { 
+  background-image: url('./assets/bali.jpeg'); 
+  background-position: center;
+}
+.fuji { 
+  background-image: url('./assets/fuji.jpeg');
+  background-size: cover;
+}
+.nepal { 
+  background-image: url('./assets/nepal.jpeg');
+  background-size: cover;
+}
+
+.img-2 {
+  background-image: url('./assets/snow.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 560px;
+  height: 600px;
+}
