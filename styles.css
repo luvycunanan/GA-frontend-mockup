@@ -3,11 +3,107 @@
   padding: 0;
 }
 
-.container {
+:root {
+  --orange: 255,122,28;
+  --gold: 234,172,34;
+  --bg-light: 255,255,255;
+  --bg-dark: 12,17,23;
+  --text-white: 255,255,255;
+  --text-gray: 140,140,140;
+  --text-ligray: 121,121,121;
+  --text-black: 0,0,0;
+}
+
+body {
   background-image: url('./assets/main-bg.jpeg');
   background-size: cover;
   background-position: center;
-  height: 700px;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+
+.container {
+  position: absolute;
+  /* background-image: url('./assets/main-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 700px; */
+  margin: 10px 125px;
+}
+
+/* ------------- TEXT STYLES --------------- */
+.link { text-decoration: none; }
+.text-light { color: rgba(var(--text-white),.9); }
+.text-dark { color: rgba(var(--text-black),1); }
+.text-gray { color: rgba(var(--text-gray),1); }
+.text-ligray { color: rgba(var(--text-ligray),1); }
+.text-orange { color: rgba(var(--orange),1); }
+.font-sm { font-size: 18px;}
+.font-md { font-size: 30px;}
+.font-lg { font-size: 40px;}
+.font-xl { font-size: 90px;}
+
+/* ------------- COLOR -------------------- */
+.gold { color: rgba(var(--gold),1); }
+.gray { color: rgba(var(--bg-dark),.7); }
+.bg-orange { background-color: rgba(var(--orange),1); }
+
+/* ------------- BUTTON ------------------ */
+.btn-border-bg {
+  border: none;
+  background: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header {
+  position: relative;
+  width: 50%;
+}
+
+.travel {
+  display: flex;
+  flex-direction: row;
+}
+
+.vel { margin-left: -5px; }
+
+.nav-wrapper {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link-wrapper {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-wrapper {
+  width: 40%;
+  justify-content: space-around;
+}
+
+.register {
+  position: relative;
+  width: 50%;
+  height: 120%;
+  border: none;
 }
 
 .img {
@@ -35,4 +131,11 @@
   background-position: center;
   width: 560px;
   height: 600px;
+}
+
+.profile-image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(var(--bg-dark),.3);
 }
