@@ -35,31 +35,39 @@
     </nav>
 
     <!----------------------------------------------- HERO --------------------------------------------------------->
-    <div>
-      <span class="text-light font-xl">Explore the amazing places in this world</span>
-      <span class="text-light font-sm">Come on vacation with us, we provide attractive vacation packages and tour guides who are experts in their fields</span>
-      <span>
-        <img src="./assets/play-btn.png" alt="play">
-        <span>Watch Video</span>
-      </span>
-      <div>
-        <div>
-          <label for="#">Location</label>
-          <select name="Location" id=""></select>
-          <input type="text" value="Enter your destination">
+    <div class="hero">
+      <div class="hero-wrapper">
+        <p class="text-light font-xl">Explore the amazing places <br> in this world</p>
+        <p class="text-light font-sm">Come on vacation with us, we provide attractive vacation packages and tour <br> guides who are experts in their fields</p>
+        <span class="play-wrapper">
+          <img src="./assets/play-btn.png" width="40px" alt="play">
+          <span class="watch font-sm text-light">Watch Video</span>
+        </span>
+      </div>
+      <div class="wrapper">
+        <div class="select">
+          <span class="select-wrapper">
+            <label for="#" class="text-dark font-sm">Location</label>
+            <select name="Location" class="btn-border-bg pointer"></select>
+          </span>
+          <input class="btn-border-bg text-gray font-sm" type="text" value="Enter your destination">
+        </div>
+        <div class="select">
+          <span class="select-wrapper">
+            <label for="#" class="text-dark font-sm">Date</label>
+            <select name="Location" class="btn-border-bg pointer"></select>
+          </span>
+          <input class="btn-border-bg text-gray font-sm" type="text" value="Enter your destination">
+        </div>
+        <div class="select">
+          <span class="select-wrapper">
+            <label for="#" class="text-dark font-sm">People</label>
+            <select name="Location" class="btn-border-bg pointer"></select>
+          </span>
+          <input class="btn-border-bg text-gray font-sm" type="text" value="Enter your destination">
         </div>
         <div>
-          <label for="#">Date</label>
-          <select name="Location" id=""></select>
-          <input type="text" value="Enter your destination">
-        </div>
-        <div>
-          <label for="#">People</label>
-          <select name="Location" id=""></select>
-          <input type="text" value="Enter your destination">
-        </div>
-        <div>
-          <button>Explore</button>
+          <button class="bg-orange pointer font-sm text-light explore">Explore</button>
         </div>
       </div>
     </div>
