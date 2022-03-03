@@ -7,6 +7,7 @@
   --orange: 255,122,28;
   --gold: 234,172,34;
   --bg-light: 255,255,255;
+  --bg-light-2: 250,250,250;
   --bg-dark: 12,17,23;
   --text-white: 255,255,255;
   --text-gray: 140,140,140;
@@ -20,7 +21,8 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   height: 720px;
-  background-color: rgba(var(--text-gray),.1);
+  background-color: rgba(var(--bg-light-2),1);
+  overflow-x: hidden;
 }
 
 .container {
@@ -271,6 +273,78 @@ body {
   justify-content: space-around;
 }
 
+/* ---------------- REVIEWS ------------------- */
+.reviews {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-wrapper {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.reviews-wrapper {
+  position: relative;
+  width: 120%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.review-block {
+  position: relative;
+  width: 18%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(var(--bg-light),1);
+  margin: 0 20px 0 0;
+  box-shadow: 0px -10px 20px rgba(var(--bg-light),1);
+}
+
+.profile-wrapper {
+  position: relative;
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.name-wrapper {
+  position: relative;
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px 0 0 10px;
+}
+
+.star-wrapper {
+  position: relative;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* ---------------- HORIZONTAL LINES ---------- */
 .hr-wrapper {
   position: relative;
@@ -323,4 +397,12 @@ body {
   height: 50px;
   border-radius: 50%;
   background-color: rgba(var(--bg-dark),.3);
+}
+
+.gold {
+  color: gold;
+}
+
+.gray {
+  color: gray;
 }
