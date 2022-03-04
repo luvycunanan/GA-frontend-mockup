@@ -8,7 +8,7 @@
   --gold: 234,172,34;
   --bg-light: 255,255,255;
   --bg-light-2: 250,250,250;
-  --bg-dark: 12,17,23;
+  --bg-dark: 28,21,15;
   --text-white: 255,255,255;
   --text-gray: 140,140,140;
   --text-ligray: 121,121,121;
@@ -28,11 +28,6 @@ body {
 .container {
   position: relative;
   margin: 10px 125px;
-  /* background-image: url('./assets/main-bg.jpeg');
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  height: 680px; */
 }
 
 /* ------------- TEXT STYLES --------------- */
@@ -281,6 +276,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 100px;
 }
 
 .contact-wrapper {
@@ -298,7 +294,6 @@ body {
   height: 40%;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -343,6 +338,54 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+/* ---------------- FOOTER -------------------- */
+#footer-bg {
+  position: absolute;
+  width: 200%;
+  left: 0;
+  background-color: rgba(var(--bg-dark),1);
+  margin-left: -125px;
+}
+
+.footer {
+  position: relative;
+  width: 80vw;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-left: 125px;
+}
+
+.travel-summary {
+  position: relative;
+  width: 15%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 0 20px 0;
+}
+
+.links-wrapper {
+  position: relative;
+  width: 80%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links-block {
+  position: relative;
+  height: 100%;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 /* ---------------- HORIZONTAL LINES ---------- */
